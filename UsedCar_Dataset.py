@@ -9,8 +9,8 @@ from sklearn.model_selection import train_test_split
 df = pd.read_csv("Used_Car_Dataset - Used_Car_Dataset.csv")
 
 # 2. Select numeric feature (X) and target variable (y)
-X = df[["Engine_Size_cc"]]  # Feature: Engine size
-y = df["Price_INR"]  # Target: Price
+X = df[["Engine_Size_cc"]]  # Feature: Engine size [Using third bracket for defining it as a 2D dataset]
+y = df["Price_INR"]  # Target: Price [Predict or Test Data]
 
 # 3. Split into 70% Training data and 30% Testing data(As given instruction) ------
 X_train, X_test, y_train, y_test = train_test_split(
