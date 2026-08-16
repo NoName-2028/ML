@@ -9,8 +9,8 @@ from sklearn.model_selection import train_test_split
 df = pd.read_csv("fuel_consumption_dataset - fuel_consumption_dataset.csv")
 
 # 2. Select numeric feature (X) and target variable (y)
-X = df[["ENGINESIZE"]]  # Feature: Engine Size
-y = df["CO2EMISSIONS"]  # Target: CO2 Emissions
+X = df[["ENGINESIZE"]]  # Feature: Engine Size [Using two third bracket for defining it as a 2D dataset]
+y = df["CO2EMISSIONS"]  # Target: CO2 Emissions [predict or test data]
 
 # 3. Split into 70% Training data and 30% Testing data
 X_train, X_test, y_train, y_test = train_test_split(
